@@ -19,7 +19,7 @@
   height: 718px;
   top: 134px;
   left: 841px;
-  background-color: #069cff;
+  background-color: #0076c4;
   border-radius: 35px;
 }
 
@@ -61,7 +61,31 @@
   height: 69px;
   top: 198px;
   left: 14px;
-  background-image: url(./img/rectangle-3.svg);
+  background-size: 100% 100%;
+}
+.register-page .div-wrapper2 {
+  position: absolute;
+  width: 357px;
+  height: 69px;
+  top: 290px;
+  left: 14px;
+  background-size: 100% 100%;
+}
+
+.register-page .div-wrapper3 {
+  position: absolute;
+  width: 357px;
+  height: 69px;
+  top: 390px;
+  left: 14px;
+  background-size: 100% 100%;
+}
+.register-page .div-wrapper4 {
+  position: absolute;
+  width: 357px;
+  height: 69px;
+  top: 490px;
+  left: 14px;
   background-size: 100% 100%;
 }
 
