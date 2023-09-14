@@ -32,6 +32,37 @@
   border-radius: 10px;
 }
 
+.login-page .div-wrapper {
+  position: absolute;
+  width: 357px;
+  height: 69px;
+  top: 198px;
+  left: 14px;
+  background-size: 100% 100%;
+}
+
+.login-page .div-wrapper2 {
+  position: absolute;
+  width: 357px;
+  height: 69px;
+  top: 288px;
+  left: 14px;
+  background-size: 100% 100%;
+}
+
+.register-page .text-wrapper-5 {
+  top: 140px;
+  left: 49px;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
 .login-page .text-input {
   position: relative;
   width: 79px;
