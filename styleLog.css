@@ -1,5 +1,9 @@
-.login-page {
+body{
   background-color: #000000;
+}
+
+
+.login-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
