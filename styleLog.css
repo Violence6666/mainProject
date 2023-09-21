@@ -1,6 +1,5 @@
 body{
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  background-color: black;
   font-size: 14px;
 }
 * {
@@ -20,8 +19,8 @@ cursor: pointer;
 }
 
 .px-3{
-  padding-right: var(--base-size-16, 16px) !important;
-  padding-left: var(--base-size-16, 16px) !important;
+  padding-right:16px;
+  padding-left:16px;
 }
 
 .cointainer-center{
@@ -45,11 +44,11 @@ div{
 }
 
 .session-authentication {
-  background-color: rgb(5, 0, 17);
+  background-color: rgb(15, 0, 49);
 }
 
 .session-authentication .auth-form-body {
-  border-top: 1px solid #21262d;
+  border-top: 1px solid #30363d;
   border-radius: 6px;
 }
 
@@ -92,7 +91,7 @@ label{
   padding: 16px;
   font-size: 14px;
   background-color: #161b22;
-  border: 1px solid #21262d;
+  border: 1px solid #30363d;
   border-top: 0;
   border-radius: 0 0 6px 6px;
 }
@@ -107,7 +106,15 @@ label{
   color: rgb(255, 255, 255);
   background-color: green;
   border-color: black;
+  outline: none;
+  border:none;
 }
+
+
+.btn-primary:hover{
+  background-color: rgb(1, 100, 1);
+}
+
 .btn{
   position: relative;
   display: inline-block;
@@ -120,7 +127,7 @@ label{
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  border: 1px solid;
+  border:none;
   border-radius: 6px;
   -webkit-appearance: none;
   appearance: none;
