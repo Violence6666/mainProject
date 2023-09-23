@@ -52,17 +52,13 @@
                         
                   <text-suggester class="js-continue-container width-full z-1 signup-text-suggester" data-catalyst="">
                     <div class="m-4 p-4 f4 color-shadow-small bg-gray-800-mktg rounded-2 signup-content-container">
-                        <h1 class="sr-only">Welcome to GitHub! Let's begin the adventure</h1>
+                        <h1 class="sr-only"></h1>
                         <typing-effect data-lines="[&quot;Welcome to GitHub!&quot;, &quot;Let’s begin the adventure&quot;]" data-continue-to="email-container" class="js-signup-typed-welcome">
-                          <span data-target="typing-effect.content" class="text-mono text-gray-light-mktg">Welcome to GitHub!<br>Let’s begin the adventure</span>
+                          <span data-target="typing-effect.content" class="text-mono text-gray-light-mktg">Добро пожаловать в МоюАкадемию!<br>Давайте начнем приключение</span>
                           <span data-target="typing-effect.cursor" class="typing-effect-cursor" hidden="">|</span>
                         </typing-effect>
                   
-                      <noscript>
-                        <div class="my-4 text-mono color-fg-attention">
-                          GitHub requires JavaScript enabled to sign up for our captcha. Please enable JavaScript.
-                        </div>
-                      </noscript>
+                 
                   
                       <!-- '"` --><!-- </textarea></xmp> --><form class="position-relative js-octocaptcha-parent" data-turbo="false" action="/signup" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="Vi9HxEMuFZA8ivb8V+6vS//MX9ONFJ7invxcR3WD8MznLxvOxDUfMEvP89fyqQoDFYt3U0yfyMXltWLWTpTeNQ==">
                         <input type="hidden" name="return_to" id="return_to" autocomplete="off" class="form-control">
@@ -115,7 +111,7 @@
                   </button>  
                               </visible-password>
                             </div>
-                            <button type="button" class="js-continue-button signup-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0" data-optimizely-event="click.signup_continue.password" data-continue-to="username-container" disabled="">
+                            <button type="button" class="js-continue-button signup-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0">
                               Continue
                             </button>
                           </div>
@@ -140,48 +136,8 @@
                             </button>
                           </div>
                         </div>
-                  
-                        <div id="opt-in-container" class="js-continue-step-container signup-continue-step-container" hidden="" data-step-state="complete">
-                          <div class="mt-4 mb-2">
-                            <label for="opt_in" class="text-mono signup-text-prompt">
-                              Would you like to receive product updates and
-                              announcements via email?<br>
-                              Type "y" for yes or "n" for no
-                            </label>
-                          </div>
-                          <div class="d-flex flex-items-center flex-column flex-sm-row">
-                            <div class="d-flex flex-items-center width-full">
-                              <span class="signup-continue-prompt mr-2"></span>
-                              <input type="text" name="opt_in" id="opt_in" value="" class="form-control js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono">
-                            </div>
-                            <button type="button" class="js-continue-button signup-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0" data-continue-to="captcha-and-submit-container" data-optimizely-event="click.signup_continue.opt-in">
-                              Continue
-                            </button>
-                          </div>
-                        </div>
-                  
-                        <div id="captcha-and-submit-container" class="width-full js-continue-step-container captcha-container" data-step-state="complete" hidden="" style="position: relative; top: 0px;">
-                            <div class="text-mono text-bold signup-text-prompt mt-4">
-                              Verify your account
-                            </div>
-                            <div class="js-continue-focus-target" tabindex="-1" style="outline: none;">
-                              
-                  <div class="my-3">                  
-                    
-                  
-                    <input required="" name="octocaptcha-token" class="js-octocaptcha-token d-none" data-octocaptcha-url="https://octocaptcha.com" data-octocaptcha-timeout="30000">
-                  </div>
-                  
-                            </div>
-                  
-                          <input class="form-control" type="text" name="required_field_ec71" hidden="hidden">
-                  <input class="form-control" type="hidden" name="timestamp" value="1695286018608">
-                  <input class="form-control" type="hidden" name="timestamp_secret" value="d02da30e452c63794c80ef7ccd2a21ab3d313535170143a3527e7eac16af53c7">
-                  
-                  
-                          <button name="button" type="submit" class="form-control signup-submit-button width-full py-2 js-octocaptcha-form-submit" data-optimizely-event="click.signup_continue.create_account" data-disable-invalid="true" disabled="" hidden="hidden">Create account</button>
-                        </div>
-                  </form>  </div>
+                  </form>  
+              </div>
                     <div class="js-continue-hint-container mx-4 px-4 f4 font-mktg text-gray-light-mktg">
                       <p id="email-err" data-hint-for="email" role="alert" aria-atomic="true"></p>
                       <p id="password-err" data-hint-for="password" role="alert" aria-atomic="true" hidden=""></p>
