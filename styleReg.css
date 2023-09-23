@@ -115,6 +115,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   justify-content: space-between !important;
 }
 
+.signup-text-prompt {
+  color: #00cfc8;
+}
+
 .font-mktg {
   font-family: "Mona Sans","Mona Sans Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   word-break: keep-all;
@@ -137,7 +141,84 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .p-4 {
   padding: 24px !important;
 }
+[hidden][hidden] {
+  display: none !important;
+}
 
+.Button--link {
+  fill: var(--fgColor-link, var(--color-accent-fg));
+  border: none;
+  color: var(--fgColor-link, var(--color-accent-fg));
+  display: inline-block;
+  font-size: inherit;
+  height: unset;
+  padding: 0;
+}
+.Button {
+  align-items: center;
+  background-color: initial;
+  border: var(--borderWidth-thin, max(1px, 0.0625rem)) solid;
+  border-color: #0000;
+  border-radius: var(--borderRadius-medium, 0.375rem);
+  color: var(--button-default-fgColor-rest, var(--color-btn-text));
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: var(--text-body-size-medium, 0.875rem);
+  font-weight: var(--base-text-weight-medium, 500);
+  gap: var(--base-size-4, 0.25rem);
+  height: var(--control-medium-size, 2rem);
+  justify-content: space-between;
+  min-width: max-content;
+  padding: 0 var(--control-medium-paddingInline-normal, 0.75rem);
+  position: relative;
+  text-align: center;
+  transition: var(--duration-fast) var(--easing-easeInOut);
+  transition-property: color,fill,background-color,border-color;
+  -webkit-user-select: none;
+  user-select: none;
+}
+button {
+  cursor: pointer;
+  border-radius: 0;
+}
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+
+.signup-continue-button {
+  display: none;
+  color: green !important;
+  background: none !important;
+  border-color: green !important;
+  box-shadow: none !important;
+}
+.px-3 {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+.mt-sm-0 {
+  margin-top: 0 !important;
+}
+
+.mt-4 {
+  margin-top: var(--base-size-24, 24px) !important;
+}
+.width-sm-auto {
+  width: auto !important;
+}
 .home-hero-glow {
   top: 50%;
   left: 50%;
@@ -145,6 +226,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   transform: translate(-50%, -50%);
 }
 
+.mr-3 {
+  margin-right: var(--base-size-16, 16px) !important;
+}
+.flex-1 {
+  flex: 1 !important;
+}
 
 .events-none {
   pointer-events: none;
@@ -232,6 +319,21 @@ auto-complete, details-dialog, details-menu, file-attachment, filter-input, remo
   justify-content: center !important;
 }
 
+.input-block {
+    display: block;
+    width: 100%;
+}
+.form-control, .form-select {
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border-radius: 6px;
+  transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
 .signup-warp-vid {
   position: absolute;
   bottom: 25vh;
@@ -253,6 +355,31 @@ auto-complete, details-dialog, details-menu, file-attachment, filter-input, remo
 }
 .color-text-white {
   color: white !important;
+}
+
+.signup-input:-webkit-autofill {
+  box-shadow: inset 0 0 0 32px #0c162d !important;
+  -webkit-text-fill-color: #fff;
+}
+.form-control:-webkit-autofill {
+  box-shadow: inset 0 0 0 32px var(--color-canvas-default) !important;
+  -webkit-text-fill-color: var(--color-fg-default);
+}
+
+.color-text-white {
+  color: var(--color-scale-white) !important;
+}
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+
+.box-shadow-none {
+  box-shadow: none !important;
 }
 
 .text-mono {
@@ -297,7 +424,20 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
+.signup-continue-step-container[data-step-state=active] .signup-continue-prompt {
+  color: #ea4aaa;
+}
+label {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+.signup-continue-prompt {
+  min-width: 14px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  color: #627597;
+}
+.mr-2 {
+  margin-right: var(--base-size-8, 8px) !important;
+}
 .text-gray-light-mktg {
   color: #8193b2 !important;
 }
@@ -309,15 +449,9 @@ h1 {
 .signup-continue-step-container[data-step-state=active] .signup-continue-button {
   display: block;
 }
-
-.signup-continue-button[disabled] {
-  color: #627597;
-  background: none;
-  border-color: #627597;
-}
-
-.width-full {
-  width: 100% !important;
+ 
+.flex-sm-row {
+  flex-direction: row !important;
 }
 
 
