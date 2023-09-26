@@ -11,11 +11,11 @@ cursor: pointer;
 }
 
 .pt-5{
-  padding-top: var(--base-size-32, 32px) !important;
+  padding-top: 32px !important;
 }
 
 .pb-4{
-  padding-bottom: var(--base-size-24, 24px) !important;
+  padding-bottom: 24px !important;
 }
 
 .px-3{
