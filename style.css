@@ -9,8 +9,8 @@ body {
   fill: currentColor;
 }
 .logotype{
-  height: 32px;
-  width: 32px;
+  height: 38px;
+  width: 38px;
 }
 .overlap-cover {
   width: 1000px;
@@ -19,6 +19,9 @@ body {
   border-radius: 100px;
   background-image: url(./img/5528701.jpg);
   color: #6f95ad;
+}
+p{
+  margin-bottom: 50px !important;
 }
 .start-content{
   text-align: center;
@@ -66,11 +69,62 @@ body {
   }
 
   .start-learn{
-    margin-top: 150px;
+    margin-top: 500px;
   }
   .overlap-learn{
-    background-image: url(./img/image-11.png);
-    background-size: cover;
-    height: 200px;
-    width: 1510px;
+    background-image: url("img/image-11.png");
+  /* задает стартовое положение изображения на странице */
+  background-position: center center;
+  /* определяет размер изображения на странице */
+  
+  /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-repeat: no-repeat;
+  /* cвойство определяет, будет ли фоновое изображение прокручиваться 
+  вместе с остальной частью страницы или будет фиксированным */
+  
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 20.5em;
+    height: 3.9em;
+    border: #3654ff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 5.5em;
+  }
+
+  .about-learn{
+    margin-top: 500px;
+  }
+
+  .info-1{
+    color:#3654ff;
+    font-size: 35px;
   }
