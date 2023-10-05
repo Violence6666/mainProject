@@ -1,3 +1,10 @@
+:root{
+--index: calc(1vw + 1vh);
+--color-text:#6f95ad;
+--galery-gap: calc(var(--index) * 10);
+}
+
+
 body {
   background: black !important;
  }
@@ -127,4 +134,22 @@ p{
   .info-1{
     color:#3654ff;
     font-size: 35px;
+  }
+
+  .gallery{
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+  }
+
+  .gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gallery__item {
+    max-width: calc(var(--index) * 21);
+    margin-bottom: var(--galery-gap);
+    max-height:100vh;
   }
