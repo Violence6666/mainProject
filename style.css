@@ -131,7 +131,7 @@ p{
     margin-top: 500px;
   }
 
-  .info-1{
+  .portfolio{
     color:#3654ff;
     font-size: 35px;
   }
@@ -149,7 +149,7 @@ p{
   }
 
   .gallery__item {
-    max-width: calc(var(--index) * 21);
+    max-width: calc(var(--index) * 18);
     margin-bottom: var(--galery-gap);
     max-height:100vh;
   }
